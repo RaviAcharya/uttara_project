@@ -16,9 +16,9 @@ import java.util.List;
 
 public class TaskManagerModel {
 	
-	public boolean createCategory(String category) throws FileAlreadyExistsException
+	public boolean createCategory(String cat) throws FileAlreadyExistsException
 	{
-		String path = Constants.PATH+"\\"+category+".txt";
+		String path = Constants.PATH+"\\"+cat+".txt";
 		File f = new File(path);
 		if(f.exists())
 		{
